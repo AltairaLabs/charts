@@ -5,8 +5,71 @@ entries:
       artifacthub.io/license: Apache-2.0
       artifacthub.io/prerelease: "true"
     apiVersion: v2
+    appVersion: 0.9.0-beta.2
+    created: "2026-04-16T10:45:06.762732715Z"
+    dependencies:
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: ~27.0
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: ~10.0
+    - condition: loki.enabled
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: ~6.0
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: ~0.10
+    - condition: tempo.enabled
+      name: tempo
+      repository: https://grafana.github.io/helm-charts
+      version: ~1.24
+    - condition: keda.enabled
+      name: keda
+      repository: https://kedacore.github.io/charts
+      version: ~2.16
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~24.0
+    - alias: nfscsi
+      condition: nfs.csiDriver.enabled
+      name: csi-driver-nfs
+      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+      version: ~4.9
+    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
+      orchestration
+    digest: 40eafd22e49e64e4f3f0c6a4b43ba0815ee8000f3e47176a160b3f2f171351e9
+    home: https://github.com/AltairaLabs/Omnia
+    keywords:
+    - kubernetes
+    - operator
+    - ai
+    - agents
+    - llm
+    - promptkit
+    - gateway-api
+    kubeVersion: '>=1.26.0-0'
+    maintainers:
+    - name: AltairaLabs
+      url: https://github.com/AltairaLabs
+    name: omnia
+    sources:
+    - https://github.com/AltairaLabs/Omnia
+    type: application
+    urls:
+    - https://charts.altairalabs.ai/omnia-0.9.0-beta.2.tgz
+    version: 0.9.0-beta.2
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/prerelease: "true"
+    apiVersion: v2
     appVersion: 0.9.0-beta.1
-    created: "2026-04-12T15:02:55.866253181Z"
+    created: "2026-04-16T10:45:06.722783347Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -64,4 +127,4 @@ entries:
     urls:
     - https://charts.altairalabs.ai/omnia-0.9.0-beta.1.tgz
     version: 0.9.0-beta.1
-generated: "2026-04-12T15:02:55.825253679Z"
+generated: "2026-04-16T10:45:06.673984291Z"
