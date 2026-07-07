@@ -5,9 +5,10 @@ Helm chart repository for [AltairaLabs](https://www.altairalabs.ai) products.
 ## Usage
 
 ```bash
-helm repo add omnia https://charts.altairalabs.ai
+helm repo add altaira https://charts.altairalabs.ai
 helm repo update
-helm search repo omnia
+# --devel is required while Omnia ships pre-release (beta) charts
+helm search repo altaira --devel
 ```
 
 ## Available Charts
