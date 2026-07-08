@@ -6,7 +6,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.17
-    created: "2026-07-08T15:39:10.680525953Z"
+    created: "2026-07-08T18:18:50.017755072Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -39,7 +39,7 @@ entries:
       version: ~4.9
     description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
       orchestration
-    digest: 313bcde0fef66463815a033c2748ec960851f00d0f1eec97a74964724ced0325
+    digest: 94d14823c27ddbffbf1084c6cc3016a269467a77c69af214451d11caf95a11fa
     home: https://github.com/AltairaLabs/Omnia
     keywords:
     - kubernetes
@@ -65,7 +65,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.16
-    created: "2026-07-08T15:39:10.642195074Z"
+    created: "2026-07-08T18:18:49.980773343Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -128,7 +128,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.15
-    created: "2026-07-08T15:39:10.590993531Z"
+    created: "2026-07-08T18:18:49.933440204Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -191,7 +191,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.13
-    created: "2026-07-08T15:39:10.540833844Z"
+    created: "2026-07-08T18:18:49.888384315Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -254,7 +254,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.9
-    created: "2026-07-08T15:39:10.907052628Z"
+    created: "2026-07-08T18:18:50.236304437Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -317,7 +317,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.8
-    created: "2026-07-08T15:39:10.855240834Z"
+    created: "2026-07-08T18:18:50.181140407Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -380,7 +380,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.6
-    created: "2026-07-08T15:39:10.809235977Z"
+    created: "2026-07-08T18:18:50.137830195Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -443,7 +443,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.5
-    created: "2026-07-08T15:39:10.7659086Z"
+    created: "2026-07-08T18:18:50.097985253Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -506,7 +506,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.2
-    created: "2026-07-08T15:39:10.723331517Z"
+    created: "2026-07-08T18:18:50.058249215Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -569,7 +569,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.1
-    created: "2026-07-08T15:39:10.49381921Z"
+    created: "2026-07-08T18:18:49.845919611Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -633,10 +633,10 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.17
-    created: "2026-07-08T15:39:10.90919967Z"
+    created: "2026-07-08T18:18:50.238411097Z"
     description: Demo agents and providers for Omnia - showcasing vision, audio, and
       tool capabilities
-    digest: ac8287bb2e215a5b74f678587923fcc19610b4743aaeebec1d0acbf6c9fd6ec4
+    digest: fc765e19747e6d8675429f7523fdb6ab299ce6c85c31c42ba686c01299f9a738
     home: https://github.com/AltairaLabs/Omnia
     keywords:
     - kubernetes
@@ -658,4 +658,4 @@ entries:
     urls:
     - https://charts.altairalabs.ai/omnia-demos-0.9.0-beta.17.tgz
     version: 0.9.0-beta.17
-generated: "2026-07-08T15:39:10.452438866Z"
+generated: "2026-07-08T18:18:49.806684585Z"
