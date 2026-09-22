@@ -1,797 +1,717 @@
 apiVersion: v1
 entries:
   omnia:
-  - annotations:
-      artifacthub.io/license: LicenseRef-Omnia-Commercial-1.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.19
-    created: "2026-09-22T15:19:50.972579258Z"
-    dependencies:
-    - condition: enterprise.enabled
-      name: omnia-ee-crds
-      repository: ""
-      version: 0.1.0
-    - alias: dev
-      condition: dev.enabled
-      name: omnia-dev
-      repository: ""
-      version: 0.1.0
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: cac6ccfc6d7596f73307e99cab4b17a55d9c0dfdb0b06d146fccf1a32daef809
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.19.tgz
-    version: 0.9.0-beta.19
-  - annotations:
-      artifacthub.io/license: LicenseRef-Omnia-Commercial-1.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.18
-    created: "2026-09-22T15:19:50.941199435Z"
-    dependencies:
-    - condition: enterprise.enabled
-      name: omnia-ee-crds
-      repository: ""
-      version: 0.1.0
-    - alias: dev
-      condition: dev.enabled
-      name: omnia-dev
-      repository: ""
-      version: 0.1.0
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: 28c866f552f38ed15118870effa61ff8a5a8d45714a07cf356c587f3f9d0be18
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.18.tgz
-    version: 0.9.0-beta.18
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.17
-    created: "2026-09-22T15:19:50.912259801Z"
-    dependencies:
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: 94d14823c27ddbffbf1084c6cc3016a269467a77c69af214451d11caf95a11fa
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.17.tgz
-    version: 0.9.0-beta.17
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.16
-    created: "2026-09-22T15:19:50.872430709Z"
-    dependencies:
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: ~24.0
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: 928ab2f8f826108c83261e26337bbb85a7d4ed43414d013cbebdb1ac963b863f
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.16.tgz
-    version: 0.9.0-beta.16
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.15
-    created: "2026-09-22T15:19:50.837976791Z"
-    dependencies:
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: ~24.0
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: 1c01177aa01e3eed988a73a556d36755c967692a2b6a3812c27aba8bbbe3cc4b
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.15.tgz
-    version: 0.9.0-beta.15
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.13
-    created: "2026-09-22T15:19:50.803440759Z"
-    dependencies:
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: ~24.0
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: 2a21bdaa8a8e0fee0fd791c6ff61c1a59815c62426d9c44902acfd87efe0dfa3
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.13.tgz
-    version: 0.9.0-beta.13
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.9
-    created: "2026-09-22T15:19:51.140933675Z"
-    dependencies:
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: ~24.0
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: d6026f7ee70a4681c7e8e60bf1418e4b7fcb0b0e2cc21c9a1a37cf1e31c017a9
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.9.tgz
-    version: 0.9.0-beta.9
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.8
-    created: "2026-09-22T15:19:51.105051323Z"
-    dependencies:
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: ~24.0
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: 807763bbb1cf298d7ddefc4c39fbe9c94bc196f3a819051c651a6d69c00d5831
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.8.tgz
-    version: 0.9.0-beta.8
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.6
-    created: "2026-09-22T15:19:51.070714192Z"
-    dependencies:
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: ~24.0
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: 8e9ccea95304f409da0ff2b7db517459453cbfe07941d4fec5d9cba192b8a477
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.6.tgz
-    version: 0.9.0-beta.6
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.5
-    created: "2026-09-22T15:19:51.039763055Z"
-    dependencies:
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: ~24.0
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: a466a57fb55c1e217fe8e1895ca530492c28bb7d752bad9c63cbd759ff7313a7
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.5.tgz
-    version: 0.9.0-beta.5
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.2
-    created: "2026-09-22T15:19:51.009786167Z"
-    dependencies:
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: ~24.0
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: 40eafd22e49e64e4f3f0c6a4b43ba0815ee8000f3e47176a160b3f2f171351e9
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.2.tgz
-    version: 0.9.0-beta.2
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.1
-    created: "2026-09-22T15:19:50.771484857Z"
-    dependencies:
-    - condition: prometheus.enabled
-      name: prometheus
-      repository: https://prometheus-community.github.io/helm-charts
-      version: ~27.0
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: ~10.0
-    - condition: loki.enabled
-      name: loki
-      repository: https://grafana.github.io/helm-charts
-      version: ~6.0
-    - condition: alloy.enabled
-      name: alloy
-      repository: https://grafana.github.io/helm-charts
-      version: ~0.10
-    - condition: tempo.enabled
-      name: tempo
-      repository: https://grafana.github.io/helm-charts
-      version: ~1.24
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: ~2.16
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: ~24.0
-    - alias: nfscsi
-      condition: nfs.csiDriver.enabled
-      name: csi-driver-nfs
-      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
-      version: ~4.9
-    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
-      orchestration
-    digest: a46e336e9fd6785b4307d9479d9ad0a78f24af01157c0022434466ffff16b576
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - operator
-    - ai
-    - agents
-    - llm
-    - promptkit
-    - gateway-api
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-0.9.0-beta.1.tgz
-    version: 0.9.0-beta.1
+    - annotations:
+        artifacthub.io/license: LicenseRef-Omnia-Commercial-1.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.19
+      created: "2026-09-22T15:19:50.972579258Z"
+      dependencies:
+        - condition: enterprise.enabled
+          name: omnia-ee-crds
+          repository: ""
+          version: 0.1.0
+        - alias: dev
+          condition: dev.enabled
+          name: omnia-dev
+          repository: ""
+          version: 0.1.0
+        - condition: prometheus.enabled
+          name: prometheus
+          repository: https://prometheus-community.github.io/helm-charts
+          version: ~27.0
+        - condition: grafana.enabled
+          name: grafana
+          repository: https://grafana.github.io/helm-charts
+          version: ~10.0
+        - condition: loki.enabled
+          name: loki
+          repository: https://grafana.github.io/helm-charts
+          version: ~6.0
+        - condition: alloy.enabled
+          name: alloy
+          repository: https://grafana.github.io/helm-charts
+          version: ~0.10
+        - condition: tempo.enabled
+          name: tempo
+          repository: https://grafana.github.io/helm-charts
+          version: ~1.24
+        - condition: keda.enabled
+          name: keda
+          repository: https://kedacore.github.io/charts
+          version: ~2.16
+        - alias: nfscsi
+          condition: nfs.csiDriver.enabled
+          name: csi-driver-nfs
+          repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+          version: ~4.9
+      description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent orchestration
+      digest: cac6ccfc6d7596f73307e99cab4b17a55d9c0dfdb0b06d146fccf1a32daef809
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - operator
+        - ai
+        - agents
+        - llm
+        - promptkit
+        - gateway-api
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-0.9.0-beta.19.tgz
+      version: 0.9.0-beta.19
+    - annotations:
+        artifacthub.io/license: Apache-2.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.17
+      created: "2026-09-22T15:19:50.912259801Z"
+      dependencies:
+        - condition: prometheus.enabled
+          name: prometheus
+          repository: https://prometheus-community.github.io/helm-charts
+          version: ~27.0
+        - condition: grafana.enabled
+          name: grafana
+          repository: https://grafana.github.io/helm-charts
+          version: ~10.0
+        - condition: loki.enabled
+          name: loki
+          repository: https://grafana.github.io/helm-charts
+          version: ~6.0
+        - condition: alloy.enabled
+          name: alloy
+          repository: https://grafana.github.io/helm-charts
+          version: ~0.10
+        - condition: tempo.enabled
+          name: tempo
+          repository: https://grafana.github.io/helm-charts
+          version: ~1.24
+        - condition: keda.enabled
+          name: keda
+          repository: https://kedacore.github.io/charts
+          version: ~2.16
+        - alias: nfscsi
+          condition: nfs.csiDriver.enabled
+          name: csi-driver-nfs
+          repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+          version: ~4.9
+      description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent orchestration
+      digest: 94d14823c27ddbffbf1084c6cc3016a269467a77c69af214451d11caf95a11fa
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - operator
+        - ai
+        - agents
+        - llm
+        - promptkit
+        - gateway-api
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-0.9.0-beta.17.tgz
+      version: 0.9.0-beta.17
+    - annotations:
+        artifacthub.io/license: Apache-2.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.16
+      created: "2026-09-22T15:19:50.872430709Z"
+      dependencies:
+        - condition: prometheus.enabled
+          name: prometheus
+          repository: https://prometheus-community.github.io/helm-charts
+          version: ~27.0
+        - condition: grafana.enabled
+          name: grafana
+          repository: https://grafana.github.io/helm-charts
+          version: ~10.0
+        - condition: loki.enabled
+          name: loki
+          repository: https://grafana.github.io/helm-charts
+          version: ~6.0
+        - condition: alloy.enabled
+          name: alloy
+          repository: https://grafana.github.io/helm-charts
+          version: ~0.10
+        - condition: tempo.enabled
+          name: tempo
+          repository: https://grafana.github.io/helm-charts
+          version: ~1.24
+        - condition: keda.enabled
+          name: keda
+          repository: https://kedacore.github.io/charts
+          version: ~2.16
+        - condition: redis.enabled
+          name: redis
+          repository: https://charts.bitnami.com/bitnami
+          version: ~24.0
+        - alias: nfscsi
+          condition: nfs.csiDriver.enabled
+          name: csi-driver-nfs
+          repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+          version: ~4.9
+      description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent orchestration
+      digest: 928ab2f8f826108c83261e26337bbb85a7d4ed43414d013cbebdb1ac963b863f
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - operator
+        - ai
+        - agents
+        - llm
+        - promptkit
+        - gateway-api
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-0.9.0-beta.16.tgz
+      version: 0.9.0-beta.16
+    - annotations:
+        artifacthub.io/license: Apache-2.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.15
+      created: "2026-09-22T15:19:50.837976791Z"
+      dependencies:
+        - condition: prometheus.enabled
+          name: prometheus
+          repository: https://prometheus-community.github.io/helm-charts
+          version: ~27.0
+        - condition: grafana.enabled
+          name: grafana
+          repository: https://grafana.github.io/helm-charts
+          version: ~10.0
+        - condition: loki.enabled
+          name: loki
+          repository: https://grafana.github.io/helm-charts
+          version: ~6.0
+        - condition: alloy.enabled
+          name: alloy
+          repository: https://grafana.github.io/helm-charts
+          version: ~0.10
+        - condition: tempo.enabled
+          name: tempo
+          repository: https://grafana.github.io/helm-charts
+          version: ~1.24
+        - condition: keda.enabled
+          name: keda
+          repository: https://kedacore.github.io/charts
+          version: ~2.16
+        - condition: redis.enabled
+          name: redis
+          repository: https://charts.bitnami.com/bitnami
+          version: ~24.0
+        - alias: nfscsi
+          condition: nfs.csiDriver.enabled
+          name: csi-driver-nfs
+          repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+          version: ~4.9
+      description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent orchestration
+      digest: 1c01177aa01e3eed988a73a556d36755c967692a2b6a3812c27aba8bbbe3cc4b
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - operator
+        - ai
+        - agents
+        - llm
+        - promptkit
+        - gateway-api
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-0.9.0-beta.15.tgz
+      version: 0.9.0-beta.15
+    - annotations:
+        artifacthub.io/license: Apache-2.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.13
+      created: "2026-09-22T15:19:50.803440759Z"
+      dependencies:
+        - condition: prometheus.enabled
+          name: prometheus
+          repository: https://prometheus-community.github.io/helm-charts
+          version: ~27.0
+        - condition: grafana.enabled
+          name: grafana
+          repository: https://grafana.github.io/helm-charts
+          version: ~10.0
+        - condition: loki.enabled
+          name: loki
+          repository: https://grafana.github.io/helm-charts
+          version: ~6.0
+        - condition: alloy.enabled
+          name: alloy
+          repository: https://grafana.github.io/helm-charts
+          version: ~0.10
+        - condition: tempo.enabled
+          name: tempo
+          repository: https://grafana.github.io/helm-charts
+          version: ~1.24
+        - condition: keda.enabled
+          name: keda
+          repository: https://kedacore.github.io/charts
+          version: ~2.16
+        - condition: redis.enabled
+          name: redis
+          repository: https://charts.bitnami.com/bitnami
+          version: ~24.0
+        - alias: nfscsi
+          condition: nfs.csiDriver.enabled
+          name: csi-driver-nfs
+          repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+          version: ~4.9
+      description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent orchestration
+      digest: 2a21bdaa8a8e0fee0fd791c6ff61c1a59815c62426d9c44902acfd87efe0dfa3
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - operator
+        - ai
+        - agents
+        - llm
+        - promptkit
+        - gateway-api
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-0.9.0-beta.13.tgz
+      version: 0.9.0-beta.13
+    - annotations:
+        artifacthub.io/license: Apache-2.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.9
+      created: "2026-09-22T15:19:51.140933675Z"
+      dependencies:
+        - condition: prometheus.enabled
+          name: prometheus
+          repository: https://prometheus-community.github.io/helm-charts
+          version: ~27.0
+        - condition: grafana.enabled
+          name: grafana
+          repository: https://grafana.github.io/helm-charts
+          version: ~10.0
+        - condition: loki.enabled
+          name: loki
+          repository: https://grafana.github.io/helm-charts
+          version: ~6.0
+        - condition: alloy.enabled
+          name: alloy
+          repository: https://grafana.github.io/helm-charts
+          version: ~0.10
+        - condition: tempo.enabled
+          name: tempo
+          repository: https://grafana.github.io/helm-charts
+          version: ~1.24
+        - condition: keda.enabled
+          name: keda
+          repository: https://kedacore.github.io/charts
+          version: ~2.16
+        - condition: redis.enabled
+          name: redis
+          repository: https://charts.bitnami.com/bitnami
+          version: ~24.0
+        - alias: nfscsi
+          condition: nfs.csiDriver.enabled
+          name: csi-driver-nfs
+          repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+          version: ~4.9
+      description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent orchestration
+      digest: d6026f7ee70a4681c7e8e60bf1418e4b7fcb0b0e2cc21c9a1a37cf1e31c017a9
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - operator
+        - ai
+        - agents
+        - llm
+        - promptkit
+        - gateway-api
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-0.9.0-beta.9.tgz
+      version: 0.9.0-beta.9
+    - annotations:
+        artifacthub.io/license: Apache-2.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.8
+      created: "2026-09-22T15:19:51.105051323Z"
+      dependencies:
+        - condition: prometheus.enabled
+          name: prometheus
+          repository: https://prometheus-community.github.io/helm-charts
+          version: ~27.0
+        - condition: grafana.enabled
+          name: grafana
+          repository: https://grafana.github.io/helm-charts
+          version: ~10.0
+        - condition: loki.enabled
+          name: loki
+          repository: https://grafana.github.io/helm-charts
+          version: ~6.0
+        - condition: alloy.enabled
+          name: alloy
+          repository: https://grafana.github.io/helm-charts
+          version: ~0.10
+        - condition: tempo.enabled
+          name: tempo
+          repository: https://grafana.github.io/helm-charts
+          version: ~1.24
+        - condition: keda.enabled
+          name: keda
+          repository: https://kedacore.github.io/charts
+          version: ~2.16
+        - condition: redis.enabled
+          name: redis
+          repository: https://charts.bitnami.com/bitnami
+          version: ~24.0
+        - alias: nfscsi
+          condition: nfs.csiDriver.enabled
+          name: csi-driver-nfs
+          repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+          version: ~4.9
+      description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent orchestration
+      digest: 807763bbb1cf298d7ddefc4c39fbe9c94bc196f3a819051c651a6d69c00d5831
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - operator
+        - ai
+        - agents
+        - llm
+        - promptkit
+        - gateway-api
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-0.9.0-beta.8.tgz
+      version: 0.9.0-beta.8
+    - annotations:
+        artifacthub.io/license: Apache-2.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.6
+      created: "2026-09-22T15:19:51.070714192Z"
+      dependencies:
+        - condition: prometheus.enabled
+          name: prometheus
+          repository: https://prometheus-community.github.io/helm-charts
+          version: ~27.0
+        - condition: grafana.enabled
+          name: grafana
+          repository: https://grafana.github.io/helm-charts
+          version: ~10.0
+        - condition: loki.enabled
+          name: loki
+          repository: https://grafana.github.io/helm-charts
+          version: ~6.0
+        - condition: alloy.enabled
+          name: alloy
+          repository: https://grafana.github.io/helm-charts
+          version: ~0.10
+        - condition: tempo.enabled
+          name: tempo
+          repository: https://grafana.github.io/helm-charts
+          version: ~1.24
+        - condition: keda.enabled
+          name: keda
+          repository: https://kedacore.github.io/charts
+          version: ~2.16
+        - condition: redis.enabled
+          name: redis
+          repository: https://charts.bitnami.com/bitnami
+          version: ~24.0
+        - alias: nfscsi
+          condition: nfs.csiDriver.enabled
+          name: csi-driver-nfs
+          repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+          version: ~4.9
+      description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent orchestration
+      digest: 8e9ccea95304f409da0ff2b7db517459453cbfe07941d4fec5d9cba192b8a477
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - operator
+        - ai
+        - agents
+        - llm
+        - promptkit
+        - gateway-api
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-0.9.0-beta.6.tgz
+      version: 0.9.0-beta.6
+    - annotations:
+        artifacthub.io/license: Apache-2.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.5
+      created: "2026-09-22T15:19:51.039763055Z"
+      dependencies:
+        - condition: prometheus.enabled
+          name: prometheus
+          repository: https://prometheus-community.github.io/helm-charts
+          version: ~27.0
+        - condition: grafana.enabled
+          name: grafana
+          repository: https://grafana.github.io/helm-charts
+          version: ~10.0
+        - condition: loki.enabled
+          name: loki
+          repository: https://grafana.github.io/helm-charts
+          version: ~6.0
+        - condition: alloy.enabled
+          name: alloy
+          repository: https://grafana.github.io/helm-charts
+          version: ~0.10
+        - condition: tempo.enabled
+          name: tempo
+          repository: https://grafana.github.io/helm-charts
+          version: ~1.24
+        - condition: keda.enabled
+          name: keda
+          repository: https://kedacore.github.io/charts
+          version: ~2.16
+        - condition: redis.enabled
+          name: redis
+          repository: https://charts.bitnami.com/bitnami
+          version: ~24.0
+        - alias: nfscsi
+          condition: nfs.csiDriver.enabled
+          name: csi-driver-nfs
+          repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+          version: ~4.9
+      description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent orchestration
+      digest: a466a57fb55c1e217fe8e1895ca530492c28bb7d752bad9c63cbd759ff7313a7
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - operator
+        - ai
+        - agents
+        - llm
+        - promptkit
+        - gateway-api
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-0.9.0-beta.5.tgz
+      version: 0.9.0-beta.5
+    - annotations:
+        artifacthub.io/license: Apache-2.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.2
+      created: "2026-09-22T15:19:51.009786167Z"
+      dependencies:
+        - condition: prometheus.enabled
+          name: prometheus
+          repository: https://prometheus-community.github.io/helm-charts
+          version: ~27.0
+        - condition: grafana.enabled
+          name: grafana
+          repository: https://grafana.github.io/helm-charts
+          version: ~10.0
+        - condition: loki.enabled
+          name: loki
+          repository: https://grafana.github.io/helm-charts
+          version: ~6.0
+        - condition: alloy.enabled
+          name: alloy
+          repository: https://grafana.github.io/helm-charts
+          version: ~0.10
+        - condition: tempo.enabled
+          name: tempo
+          repository: https://grafana.github.io/helm-charts
+          version: ~1.24
+        - condition: keda.enabled
+          name: keda
+          repository: https://kedacore.github.io/charts
+          version: ~2.16
+        - condition: redis.enabled
+          name: redis
+          repository: https://charts.bitnami.com/bitnami
+          version: ~24.0
+        - alias: nfscsi
+          condition: nfs.csiDriver.enabled
+          name: csi-driver-nfs
+          repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+          version: ~4.9
+      description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent orchestration
+      digest: 40eafd22e49e64e4f3f0c6a4b43ba0815ee8000f3e47176a160b3f2f171351e9
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - operator
+        - ai
+        - agents
+        - llm
+        - promptkit
+        - gateway-api
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-0.9.0-beta.2.tgz
+      version: 0.9.0-beta.2
+    - annotations:
+        artifacthub.io/license: Apache-2.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.1
+      created: "2026-09-22T15:19:50.771484857Z"
+      dependencies:
+        - condition: prometheus.enabled
+          name: prometheus
+          repository: https://prometheus-community.github.io/helm-charts
+          version: ~27.0
+        - condition: grafana.enabled
+          name: grafana
+          repository: https://grafana.github.io/helm-charts
+          version: ~10.0
+        - condition: loki.enabled
+          name: loki
+          repository: https://grafana.github.io/helm-charts
+          version: ~6.0
+        - condition: alloy.enabled
+          name: alloy
+          repository: https://grafana.github.io/helm-charts
+          version: ~0.10
+        - condition: tempo.enabled
+          name: tempo
+          repository: https://grafana.github.io/helm-charts
+          version: ~1.24
+        - condition: keda.enabled
+          name: keda
+          repository: https://kedacore.github.io/charts
+          version: ~2.16
+        - condition: redis.enabled
+          name: redis
+          repository: https://charts.bitnami.com/bitnami
+          version: ~24.0
+        - alias: nfscsi
+          condition: nfs.csiDriver.enabled
+          name: csi-driver-nfs
+          repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+          version: ~4.9
+      description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent orchestration
+      digest: a46e336e9fd6785b4307d9479d9ad0a78f24af01157c0022434466ffff16b576
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - operator
+        - ai
+        - agents
+        - llm
+        - promptkit
+        - gateway-api
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-0.9.0-beta.1.tgz
+      version: 0.9.0-beta.1
   omnia-demos:
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "true"
-    apiVersion: v2
-    appVersion: 0.9.0-beta.17
-    created: "2026-09-22T15:19:51.142317762Z"
-    description: Demo agents and providers for Omnia - showcasing vision, audio, and
-      tool capabilities
-    digest: fc765e19747e6d8675429f7523fdb6ab299ce6c85c31c42ba686c01299f9a738
-    home: https://github.com/AltairaLabs/Omnia
-    keywords:
-    - kubernetes
-    - ai
-    - agents
-    - llm
-    - ollama
-    - demo
-    - vision
-    - audio
-    kubeVersion: '>=1.26.0-0'
-    maintainers:
-    - name: AltairaLabs
-      url: https://github.com/AltairaLabs
-    name: omnia-demos
-    sources:
-    - https://github.com/AltairaLabs/Omnia
-    type: application
-    urls:
-    - https://charts.altairalabs.ai/omnia-demos-0.9.0-beta.17.tgz
-    version: 0.9.0-beta.17
+    - annotations:
+        artifacthub.io/license: Apache-2.0
+        artifacthub.io/prerelease: "true"
+      apiVersion: v2
+      appVersion: 0.9.0-beta.17
+      created: "2026-09-22T15:19:51.142317762Z"
+      description: Demo agents and providers for Omnia - showcasing vision, audio, and tool capabilities
+      digest: fc765e19747e6d8675429f7523fdb6ab299ce6c85c31c42ba686c01299f9a738
+      home: https://github.com/AltairaLabs/Omnia
+      keywords:
+        - kubernetes
+        - ai
+        - agents
+        - llm
+        - ollama
+        - demo
+        - vision
+        - audio
+      kubeVersion: '>=1.26.0-0'
+      maintainers:
+        - name: AltairaLabs
+          url: https://github.com/AltairaLabs
+      name: omnia-demos
+      sources:
+        - https://github.com/AltairaLabs/Omnia
+      type: application
+      urls:
+        - https://charts.altairalabs.ai/omnia-demos-0.9.0-beta.17.tgz
+      version: 0.9.0-beta.17
 generated: "2026-09-22T15:19:50.744382453Z"
