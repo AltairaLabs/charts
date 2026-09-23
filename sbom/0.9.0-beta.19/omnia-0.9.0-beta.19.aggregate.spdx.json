@@ -3,9 +3,9 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "omnia-0.9.0-beta.19-aggregate",
-  "documentNamespace": "https://omnia.altairalabs.ai/spdx/omnia-0.9.0-beta.19-aggregate-90c13cb5-bea1-4f88-8a65-0c266209f0a0",
+  "documentNamespace": "https://omnia.altairalabs.ai/spdx/omnia-0.9.0-beta.19-aggregate-22397034-e761-4cff-8e32-fe4b5ed8101b",
   "creationInfo": {
-    "created": "2026-09-22T15:19:30Z",
+    "created": "2026-09-23T14:04:20Z",
     "creators": [
       "Tool: omnia-sbom-aggregate",
       "Organization: Altaira Labs"
@@ -16,7 +16,7 @@
     {
       "SPDXID": "SPDXRef-1-altairalabs-atlas",
       "name": "@altairalabs/atlas",
-      "versionInfo": "0.23.0",
+      "versionInfo": "0.24.1",
       "downloadLocation": "git+https://github.com/AltairaLabs/atlas-components.git",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "LicenseRef-UNLICENSED",
@@ -26,12 +26,12 @@
       "externalRefs": [
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas:\\@altairalabs\\/atlas:0.23.0:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas:\\@altairalabs\\/atlas:0.24.1:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         },
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:npm/%40altairalabs/atlas@0.23.0",
+          "referenceLocator": "pkg:npm/%40altairalabs/atlas@0.24.1",
           "referenceType": "purl"
         }
       ],
@@ -40,7 +40,7 @@
     {
       "SPDXID": "SPDXRef-2-altairalabs-atlas-tokens",
       "name": "@altairalabs/atlas-tokens",
-      "versionInfo": "0.6.1",
+      "versionInfo": "0.7.0",
       "downloadLocation": "git+https://github.com/AltairaLabs/atlas-components.git",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "LicenseRef-UNLICENSED",
@@ -50,37 +50,37 @@
       "externalRefs": [
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas-tokens:\\@altairalabs\\/atlas-tokens:0.6.1:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas-tokens:\\@altairalabs\\/atlas-tokens:0.7.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         },
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas-tokens:\\@altairalabs\\/atlas_tokens:0.6.1:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas-tokens:\\@altairalabs\\/atlas_tokens:0.7.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         },
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas_tokens:\\@altairalabs\\/atlas-tokens:0.6.1:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas_tokens:\\@altairalabs\\/atlas-tokens:0.7.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         },
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas_tokens:\\@altairalabs\\/atlas_tokens:0.6.1:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas_tokens:\\@altairalabs\\/atlas_tokens:0.7.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         },
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas:\\@altairalabs\\/atlas-tokens:0.6.1:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas:\\@altairalabs\\/atlas-tokens:0.7.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         },
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas:\\@altairalabs\\/atlas_tokens:0.6.1:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:\\@altairalabs\\/atlas:\\@altairalabs\\/atlas_tokens:0.7.0:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
         },
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:npm/%40altairalabs/atlas-tokens@0.6.1",
+          "referenceLocator": "pkg:npm/%40altairalabs/atlas-tokens@0.7.0",
           "referenceType": "purl"
         }
       ],
