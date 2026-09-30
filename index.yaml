@@ -5,8 +5,72 @@ entries:
       artifacthub.io/license: LicenseRef-Omnia-Commercial-1.0
       artifacthub.io/prerelease: "true"
     apiVersion: v2
+    appVersion: 0.9.0-beta.20
+    created: "2026-09-30T21:22:17.191361887Z"
+    dependencies:
+    - alias: dev
+      condition: dev.enabled
+      name: omnia-dev
+      repository: ""
+      version: 0.1.0
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: ~27.0
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: ~10.0
+    - condition: loki.enabled
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: ~6.0
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: ~0.10
+    - condition: tempo.enabled
+      name: tempo
+      repository: https://grafana.github.io/helm-charts
+      version: ~1.24
+    - condition: keda.enabled
+      name: keda
+      repository: https://kedacore.github.io/charts
+      version: ~2.16
+    - alias: nfscsi
+      condition: nfs.csiDriver.enabled
+      name: csi-driver-nfs
+      repository: https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+      version: ~4.9
+    description: A Helm chart for deploying Omnia - Kubernetes operator for AI agent
+      orchestration
+    digest: 6f13398ddfafefe56a062d945283609558689ee7e24d746fb469cabae618f1ca
+    home: https://github.com/AltairaLabs/Omnia
+    keywords:
+    - kubernetes
+    - operator
+    - ai
+    - agents
+    - llm
+    - promptkit
+    - gateway-api
+    kubeVersion: '>=1.26.0-0'
+    maintainers:
+    - name: AltairaLabs
+      url: https://github.com/AltairaLabs
+    name: omnia
+    sources:
+    - https://github.com/AltairaLabs/Omnia
+    type: application
+    urls:
+    - https://charts.altairalabs.ai/omnia-0.9.0-beta.20.tgz
+    version: 0.9.0-beta.20
+  - annotations:
+      artifacthub.io/license: LicenseRef-Omnia-Commercial-1.0
+      artifacthub.io/prerelease: "true"
+    apiVersion: v2
     appVersion: 0.9.0-beta.19
-    created: "2026-09-23T14:04:37.228395599Z"
+    created: "2026-09-30T21:22:17.128682747Z"
     dependencies:
     - alias: dev
       condition: dev.enabled
@@ -70,7 +134,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.18
-    created: "2026-09-23T14:04:37.165359113Z"
+    created: "2026-09-30T21:22:17.093506714Z"
     dependencies:
     - condition: enterprise.enabled
       name: omnia-ee-crds
@@ -138,7 +202,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.17
-    created: "2026-09-23T14:04:37.083832436Z"
+    created: "2026-09-30T21:22:17.047708981Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -197,7 +261,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.16
-    created: "2026-09-23T14:04:37.023452982Z"
+    created: "2026-09-30T21:22:17.017328129Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -260,7 +324,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.15
-    created: "2026-09-23T14:04:36.963911283Z"
+    created: "2026-09-30T21:22:16.979634855Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -323,7 +387,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.13
-    created: "2026-09-23T14:04:36.910742773Z"
+    created: "2026-09-30T21:22:16.943873773Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -386,7 +450,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.9
-    created: "2026-09-23T14:04:37.466025386Z"
+    created: "2026-09-30T21:22:17.324291703Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -449,7 +513,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.8
-    created: "2026-09-23T14:04:37.415676984Z"
+    created: "2026-09-30T21:22:17.289538252Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -512,7 +576,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.6
-    created: "2026-09-23T14:04:37.361971751Z"
+    created: "2026-09-30T21:22:17.254596107Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -575,7 +639,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.5
-    created: "2026-09-23T14:04:37.320034035Z"
+    created: "2026-09-30T21:22:17.222103814Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -638,7 +702,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.2
-    created: "2026-09-23T14:04:37.275444992Z"
+    created: "2026-09-30T21:22:17.161452243Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -701,7 +765,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.1
-    created: "2026-09-23T14:04:36.855672322Z"
+    created: "2026-09-30T21:22:16.907471666Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -765,8 +829,43 @@ entries:
       artifacthub.io/operator: "true"
       artifacthub.io/prerelease: "true"
     apiVersion: v2
+    appVersion: 0.9.0-beta.20
+    created: "2026-09-30T21:22:17.331797339Z"
+    description: 'CustomResourceDefinitions for Omnia, as their own release. Helm
+      installs a chart''s crds/ directory on FIRST INSTALL ONLY — never on upgrade,
+      never templated — so a schema change or a newly enabled enterprise.enabled simply
+      never reached an existing cluster, and nothing reported it. These are templates
+      in a separate release instead, which makes `helm upgrade` work. The three failures
+      that originally drove the CRDs into crds/ (#1796) are all artifacts of CRDs
+      sharing a release with custom resources OF those kinds: a separate release dissolves
+      the install-order and reinstall-ownership ones outright, and helm.sh/resource-policy=keep
+      on every CRD neutralises the uninstall cascade.'
+    digest: 078890dbb27dde65d4862a8fec4833efb149f4720b9644e1933cc5e0c88d8817
+    home: https://github.com/AltairaLabs/Omnia
+    keywords:
+    - kubernetes
+    - crd
+    - operator
+    - ai
+    - agents
+    kubeVersion: '>=1.26.0-0'
+    maintainers:
+    - name: AltairaLabs
+      url: https://github.com/AltairaLabs
+    name: omnia-crds
+    sources:
+    - https://github.com/AltairaLabs/Omnia
+    type: application
+    urls:
+    - https://charts.altairalabs.ai/omnia-crds-0.9.0-beta.20.tgz
+    version: 0.9.0-beta.20
+  - annotations:
+      artifacthub.io/license: LicenseRef-Omnia-Commercial-1.0
+      artifacthub.io/operator: "true"
+      artifacthub.io/prerelease: "true"
+    apiVersion: v2
     appVersion: 0.9.0-beta.19
-    created: "2026-09-23T14:04:37.469857638Z"
+    created: "2026-09-30T21:22:17.327620263Z"
     description: 'CustomResourceDefinitions for Omnia, as their own release. Helm
       installs a chart''s crds/ directory on FIRST INSTALL ONLY — never on upgrade,
       never templated — so a schema change or a newly enabled enterprise.enabled simply
@@ -801,7 +900,7 @@ entries:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 0.9.0-beta.17
-    created: "2026-09-23T14:04:37.47199727Z"
+    created: "2026-09-30T21:22:17.333302415Z"
     description: Demo agents and providers for Omnia - showcasing vision, audio, and
       tool capabilities
     digest: fc765e19747e6d8675429f7523fdb6ab299ce6c85c31c42ba686c01299f9a738
@@ -826,4 +925,4 @@ entries:
     urls:
     - https://charts.altairalabs.ai/omnia-demos-0.9.0-beta.17.tgz
     version: 0.9.0-beta.17
-generated: "2026-09-23T14:04:36.813486922Z"
+generated: "2026-09-30T21:22:16.873251926Z"
